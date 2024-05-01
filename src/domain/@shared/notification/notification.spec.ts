@@ -95,22 +95,22 @@ describe("Unit tests for notifications for products", () => {
     );
   });
 
-  it("should check if notification has at least one error", () => {
+  it("should check if product notification has at least one error", () => {
     const notification = new Notification();
     const error = {
       message: "error message",
-      context: "customer",
+      context: "product",
     };
     notification.addError(error);
 
     expect(notification.hasErrors()).toBe(true);
   });
 
-  it("should get all errors props", () => {
+  it("should get all product errors props", () => {
     const notification = new Notification();
     const error = {
       message: "error message",
-      context: "customer",
+      context: "product",
     };
     notification.addError(error);
 
